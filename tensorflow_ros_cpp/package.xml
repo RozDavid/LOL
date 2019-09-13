@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tensorflow_ros_cpp</name>
+  <version>3.1.0</version>
+  <description>Catkin-friendly C++ bindings for the tensorflow package.</description>
+
+  <maintainer email="martin.pecka@cvut.cz">Martin Pecka</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">https://wiki.ros.org/tensorflow_ros_cpp</url>
+  <url type="repository">https://github.com/tradr-project/tensorflow_ros_cpp</url>
+  <url type="bugtracker">https://github.com/tradr-project/tensorflow_ros_cpp/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>python</build_depend>
+  <build_export_depend>python</build_export_depend>
+
+  <build_depend>python-pip</build_depend> <!-- optional -->
+
+  <depend>python-tensorflow-pip</depend> <!-- optional -->
+  <depend>tensorflow_catkin</depend> <!-- optional -->
+</package>

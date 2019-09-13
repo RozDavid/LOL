@@ -1,0 +1,11 @@
+/**
+
+\mainpage LOAM
+This is a ROS implementation of LOAM for Velodyne multiplane laser scanners.
+    LOAM is described in the following paper:
+    J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time.
+      Robotics: Science and Systems Conference (RSS). Berkeley, CA, July 2014.
+
+The here presented version is modified directly to work as a backedn for the Segmatch frontend for segment matching and translation error calculations.  
+
+*/

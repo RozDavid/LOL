@@ -1,0 +1,159 @@
+/home/david/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.3684.76/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/david/Catkin/cnn_loam_segmap/src/segmap/segmatch_ros
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/david/Catkin/cnn_loam_segmap/src/segmap/segmatch_ros/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/david/Catkin/cnn_loam_segmap/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/david/Catkin/cnn_loam_segmap/devel;/opt/ros/kinetic
+-- Found PythonInterp: /usr/bin/python (found version "2.7.12") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/david/Catkin/cnn_loam_segmap/src/segmap/segmatch_ros/cmake-build-debug/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.11
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.3.1
+-- Found eigen: /home/david/Catkin/cnn_loam_segmap/devel/include  
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+--   atomic
+--   regex
+-- Checking for module 'flann'
+--   Found flann, version 1.8.4
+-- Found Flann: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a  
+-- Checking for module 'libopenni'
+--   Found libopenni, version 1.5.4.0
+-- Found openni: /usr/lib/libOpenNI.so  
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** io features related to openni2 will be disabled
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** io features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** io features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- Found libusb-1.0: /usr/include  
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** visualization features related to openni2 will be disabled
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** visualization features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** visualization features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** visualization features related to dssdk will be disabled
+-- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) 
+** WARNING ** visualization features related to rssdk will be disabled
+-- Found qhull: /usr/lib/x86_64-linux-gnu/libqhull.so  
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_common.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_octree.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_kdtree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_filters.so  
+-- looking for PCL_IO
+-- Found PCL_IO: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_io.so  
+-- looking for PCL_2D
+-- Found PCL_2D: /home/david/Catkin/cnn_loam_segmap/devel/include/pcl-1.8  
+-- looking for PCL_FEATURES
+-- Found PCL_FEATURES: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_features.so  
+-- looking for PCL_REGISTRATION
+-- Found PCL_REGISTRATION: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_registration.so  
+-- looking for PCL_ML
+-- Found PCL_ML: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_ml.so  
+-- looking for PCL_GEOMETRY
+-- Found PCL_GEOMETRY: /home/david/Catkin/cnn_loam_segmap/devel/include/pcl-1.8  
+-- looking for PCL_VISUALIZATION
+-- Found PCL_VISUALIZATION: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_visualization.so  
+-- looking for PCL_OUTOFCORE
+-- Found PCL_OUTOFCORE: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_outofcore.so  
+-- looking for PCL_KEYPOINTS
+-- Found PCL_KEYPOINTS: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_keypoints.so  
+-- looking for PCL_SURFACE
+-- Found PCL_SURFACE: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_surface.so  
+-- looking for PCL_SEGMENTATION
+-- Found PCL_SEGMENTATION: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_segmentation.so  
+-- looking for PCL_RECOGNITION
+-- Found PCL_RECOGNITION: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_recognition.so  
+-- looking for PCL_PEOPLE
+-- Found PCL_PEOPLE: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_people.so  
+-- looking for PCL_TRACKING
+-- Found PCL_TRACKING: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_tracking.so  
+-- looking for PCL_STEREO
+-- Found PCL_STEREO: /home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_stereo.so  
+-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_common.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_common.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_octree.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_octree.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_kdtree.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_kdtree.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_search.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_search.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_sample_consensus.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_sample_consensus.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_filters.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_filters.so;/usr/lib/libOpenNI.so;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkFiltersModeling;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkCommonExecutionModel;vtkFiltersSources;vtkIOMPIParallel;vtkIOGeometry;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkParallelMPI;vtkParallelCore;vtkIOLegacy;vtkFiltersSMP;vtkFiltersVerdict;verdict;vtkalglib;vtkIOParallelLSDyna;vtkIOLSDyna;vtkIOXML;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGDAL;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkTestingRendering;vtkImagingCore;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkFiltersGeometry;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkTestingGenericBridge;vtkInteractionImage;vtkImagingColor;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkImagingGeneral;vtkImagingHybrid;vtkRenderingAnnotation;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkRenderingOpenGL;/usr/lib/libgl2ps.so;vtkxdmf2;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5_hl.so;/usr/lib/openmpi/lib/libmpi.so;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersImaging;vtkRenderingContext2D;vtkGeovisCore;vtkInfovisLayout;vtkInfovisCore;vtkViewsCore;vtkproj4;vtkRenderingLOD;vtkIOGeoJSON;vtkImagingStencil;vtkPythonInterpreter;vtkInfovisBoostGraphAlgorithms;vtkIOXdmf2;vtkWrappingJava;vtkRenderingParallel;vtkFiltersParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOSQL;sqlite3;vtkParallelMPI4Py;vtkIOParallelNetCDF;vtkFiltersParallelGeometry;vtkRenderingParallelLIC;vtkRenderingLIC;vtkLocalExample;vtkRenderingFreeTypeFontConfig;vtkRenderingGL2PS;vtkRenderingContextOpenGL;vtkIOMPIImage;vtkIOVideo;vtkIOImport;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingLabel;vtkexoIIc;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQtSQL;vtkIOFFMPEG;vtkIOMovie;vtkIOExport;vtkIOMINC;vtkImagingStatistics;vtkIOAMR;vtkFiltersAMR;vtkIOExodus;vtkIOVPIC;VPIC;vtkImagingMath;vtkFiltersGeneric;vtkRenderingFreeTypeOpenGL;vtkRenderingImage;vtkIOEnSight;vtkGUISupportQtOpenGL;vtkDomainsChemistry;vtkIOPLY;vtkFiltersSelection;vtkImagingMorphological;vtkTestingIOSQL;vtkIOPostgreSQL;vtkFiltersHyperTree;vtkViewsGeovis;vtkIOParallelXML;vtkViewsContext2D;vtkRenderingExternal;vtkIOODBC;vtkIOParallel;vtkIOParallelExodus;vtkFiltersReebGraph;vtkFiltersParallelFlowPaths;vtkFiltersFlowPaths;vtkIOInfovis;vtkGUISupportQtWebkit;vtkRenderingVolumeOpenGL;vtkIOMySQL;vtkFiltersParallelStatistics;vtkRenderingMatplotlib;vtkFiltersProgrammable;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_io.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_io.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_features.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_features.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_registration.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_registration.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_ml.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_ml.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_visualization.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_visualization.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_outofcore.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_outofcore.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_keypoints.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_keypoints.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_surface.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_surface.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_segmentation.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_segmentation.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_recognition.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_recognition.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_people.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_people.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_tracking.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_tracking.so;optimized;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_stereo.so;debug;/home/david/Catkin/cnn_loam_segmap/devel/lib/libpcl_stereo.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkFiltersModeling;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkCommonExecutionModel;vtkFiltersSources;vtkIOMPIParallel;vtkIOGeometry;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkParallelMPI;vtkParallelCore;vtkIOLegacy;vtkFiltersSMP;vtkFiltersVerdict;verdict;vtkalglib;vtkIOParallelLSDyna;vtkIOLSDyna;vtkIOXML;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGDAL;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkTestingRendering;vtkImagingCore;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkFiltersGeometry;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkTestingGenericBridge;vtkInteractionImage;vtkImagingColor;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkImagingGeneral;vtkImagingHybrid;vtkRenderingAnnotation;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkRenderingOpenGL;/usr/lib/libgl2ps.so;vtkxdmf2;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5_hl.so;/usr/lib/openmpi/lib/libmpi.so;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersImaging;vtkRenderingContext2D;vtkGeovisCore;vtkInfovisLayout;vtkInfovisCore;vtkViewsCore;vtkproj4;vtkRenderingLOD;vtkIOGeoJSON;vtkImagingStencil;vtkPythonInterpreter;vtkInfovisBoostGraphAlgorithms;vtkIOXdmf2;vtkWrappingJava;vtkRenderingParallel;vtkFiltersParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOSQL;sqlite3;vtkParallelMPI4Py;vtkIOParallelNetCDF;vtkFiltersParallelGeometry;vtkRenderingParallelLIC;vtkRenderingLIC;vtkLocalExample;vtkRenderingFreeTypeFontConfig;vtkRenderingGL2PS;vtkRenderingContextOpenGL;vtkIOMPIImage;vtkIOVideo;vtkIOImport;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingLabel;vtkexoIIc;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQtSQL;vtkIOFFMPEG;vtkIOMovie;vtkIOExport;vtkIOMINC;vtkImagingStatistics;vtkIOAMR;vtkFiltersAMR;vtkIOExodus;vtkIOVPIC;VPIC;vtkImagingMath;vtkFiltersGeneric;vtkRenderingFreeTypeOpenGL;vtkRenderingImage;vtkIOEnSight;vtkGUISupportQtOpenGL;vtkDomainsChemistry;vtkIOPLY;vtkFiltersSelection;vtkImagingMorphological;vtkTestingIOSQL;vtkIOPostgreSQL;vtkFiltersHyperTree;vtkViewsGeovis;vtkIOParallelXML;vtkViewsContext2D;vtkRenderingExternal;vtkIOODBC;vtkIOParallel;vtkIOParallelExodus;vtkFiltersReebGraph;vtkFiltersParallelFlowPaths;vtkFiltersFlowPaths;vtkIOInfovis;vtkGUISupportQtWebkit;vtkRenderingVolumeOpenGL;vtkIOMySQL;vtkFiltersParallelStatistics;vtkRenderingMatplotlib;vtkFiltersProgrammable (Required is at least version "1.8") 
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   chrono
+--   date_time
+--   atomic
+-- Marking SHARED_LIBRARY "segmatch_ros" of package "segmatch_ros" for installation
+-- Marking HEADER FILES in "include" folder of package "segmatch_ros" for installation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/david/Catkin/cnn_loam_segmap/src/segmap/segmatch_ros/cmake-build-debug

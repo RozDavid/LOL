@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/david/Catkin/cnn_loam_segmap/src/segmap/segmatch_ros/cmake-build-debug/devel/setup.sh

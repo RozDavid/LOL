@@ -1,0 +1,13 @@
+sliding_window_size: 10
+nscan_to_match: 5
+
+odometry_noise_model: [0.005, 0.005, 0.005, 0.0015, 0.0015, 0.0015]
+icp_noise_model: [0.005, 0.005, 0.005, 0.0015, 0.0015, 0.0015]
+loop_closure_noise_model: [0.005, 0.005, 0.005, 0.0015, 0.0015, 0.0015]
+
+add_m_estimator_on_odom: 0
+add_m_estimator_on_icp: 1
+
+use_icp_factors: 0
+
+publish_cloud_every_x_ns: 1000000000 

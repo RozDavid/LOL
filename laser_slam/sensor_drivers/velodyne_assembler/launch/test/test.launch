@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <!-- Fill in with correct paths -->
+  <arg name="rosbag_path" default="$(find laser_slam)/rosbags_and_rviz_config/03_05_2016_one_loop_J_floor.bag"/>
+  <arg name="rviz_config_path" default="$(find velodyne_assembler)/launch/test/compare.rviz"/>
+
+  <!-- rviz -->
+  <rosparam>use_sim_time: true</rosparam>
+  <node pkg="rviz" type="rviz" name="visualizer" output="screen" respawn="true" args=" -d $(arg rviz_config_path)" />
+
+  <!-- ROSbag player -->
+  <node pkg="rosbag" type="play" name="player" output="screen" args="--pause -s 26 -r 0.05 --clock $(arg rosbag_path)" /> 
+
+  <!-- transform publisher -->
+  <node pkg="tf" type="static_transform_publisher" name="tf_publisher" args="0 0 0.5 0 0 0 1 base_link velodyne 200" />
+
+  <!-- cloud assembler -->
+  <include file="$(find velodyne_assembler)/launch/velodyne_assembler.launch" />
+
+</launch>

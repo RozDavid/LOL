@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/david/Catkin/cnn_loam_segmap/src/laser_slam/laser_slam_ros/cmake-build-debug/devel/setup.sh

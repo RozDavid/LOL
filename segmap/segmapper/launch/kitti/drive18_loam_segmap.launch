@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  
+  <arg name="respawn_value" default="false" /> <!-- boolean: true, false -->
+  <arg name="scanPeriod" default="0.1" />
+  
+  <!-- Bag file path -->  
+  <arg name="bag_file" value="/media/david/8bee178c-7a37-4307-a49e-d7bfd8f9c563/Rozenberszki/SZTAKI/KITTI/2011_09_30/2011_09_30_drive_0018_sync/drive_18_points.bag"/>
+	
+  <!-- Rviz visualization config file path -->
+  <arg name="rviz_config_file" value="$(find segmapper)/demonstration_files/kitti/kitti_localization.rviz"/>
+
+  <!-- ROS parameters -->
+  <rosparam>use_sim_time: true</rosparam>
+
+  <rosparam command="load" file="$(find segmapper)/launch/kitti/kitti_localization.yaml"/>
+  
+  <!-- Target cloud -->
+  <arg name="target_cloud" value="/media/david/8bee178c-7a37-4307-a49e-d7bfd8f9c563/Rozenberszki/SZTAKI/KITTI/2011_09_30/2011_09_30_drive_0018_sync/drive18_target_map.pcd"/>
+  <rosparam param="/SegMapper/SegMatchWorker/target_cloud_filename" subst_value="True">$(arg target_cloud)</rosparam>
+  
+  <!-- Callgrind profiling option -->
+  <arg name="enable_callgrind" default="false" />
+  <arg name="play_rate" value="0.005" if="$(arg enable_callgrind)"/>
+  <arg name="play_rate" value="1" unless="$(arg enable_callgrind)"/>
+
+  <!-- rviz node -->
+  <node name="visualizer" pkg="rviz" type="rviz" output="screen" respawn="$(arg respawn_value)" args="-d $(arg rviz_config_file)" />
+  
+  <!-- rosbag player node -->
+  <node name="player" pkg="rosbag" type="play" output="screen" args=" -r $(arg play_rate) -s 0 --clock --pause $(arg bag_file)"/>
+
+  <!-- segmapper node -->
+  <include file="$(find segmapper)/launch/segmapper.launch">
+    <arg name="icp_configuration_file" value="$(find segmapper)/launch/kitti/icp_dynamic_outdoor.yaml"/>
+    <arg name="icp_input_filters_file" value="$(find segmapper)/launch/kitti/input_filters_outdoor.yaml"/>
+    <arg name="enable_callgrind" value="$(arg enable_callgrind)"/>
+  </include>
+
+  <!-- loam nodes -->
+
+ <node pkg="tf2_ros" type="static_transform_publisher" name="static_broadcaster" args="0 0 0 0.5 0.5 0.5 0.5 world imu_new" />
+
+  <node pkg="loam_velodyne" type="multiScanRegistration" name="multiScanRegistration" output="screen">
+    <param name="lidar" value="HDL-64E" /> <!-- options: VLP-16  HDL-32  HDL-64E -->
+    <param name="scanPeriod" value="$(arg scanPeriod)" />
+
+    <remap from="/multi_scan_points" to="/velodyne_points" />
+  </node>
+
+  <node pkg="loam_velodyne" type="laserOdometry" name="laserOdometry" output="screen" respawn="true">
+    <param name="scanPeriod" value="$(arg scanPeriod)" />
+  </node>
+
+  <node pkg="loam_velodyne" type="laserMapping" name="laserMapping" output="screen">
+    <param name="scanPeriod" value="$(arg scanPeriod)" />
+  </node>
+
+  <node pkg="loam_velodyne" type="transformMaintenance" name="transformMaintenance" output="screen">
+  </node>
+
+</launch>

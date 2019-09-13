@@ -1,0 +1,2 @@
+/usr/bin/ar qc libloam.a  CMakeFiles/loam.dir/ScanRegistration.cpp.o CMakeFiles/loam.dir/MultiScanRegistration.cpp.o CMakeFiles/loam.dir/LaserOdometry.cpp.o CMakeFiles/loam.dir/LaserMapping.cpp.o CMakeFiles/loam.dir/TransformMaintenance.cpp.o
+/usr/bin/ranlib libloam.a

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>laser_slam_tools</name>
+  <version>0.0.1</version>
+  <description>laser_slam_tools</description>
+  
+  <maintainer email="rdube@ethz.ch">Renaud Dubé</maintainer>
+  <maintainer email="gawela@ethz.ch">Abel Gawel</maintainer>
+  
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+  
+  <depend>glog_catkin</depend>
+  <depend>laser_slam_ros</depend>
+  <depend>pcl_catkin</depend>
+  <depend>octomap_world</depend>
+
+</package>
+

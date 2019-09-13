@@ -1,0 +1,40 @@
+# This config file for Travis CI utilizes ros-industrial/industrial_ci package.
+# For more info for the package, see https://github.com/ros-industrial/industrial_ci/blob/master/README.rst
+sudo: required 
+dist: trusty 
+services:
+  - docker
+language: generic 
+compiler:
+  - gcc
+notifications:
+  email:
+    on_failure: always
+    recipients:
+      - peckama2@fel.cvut.cz
+env:
+  global:
+    - BEFORE_SCRIPT=".travis/upgrade_pip.sh"
+    - ROSDEP_SKIP_KEYS="tensorflow_catkin"
+    - TARGET_PKGS="tensorflow_ros_cpp tensorflow_ros_test"
+    - ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
+    - UPSTREAM_WORKSPACE="file"
+    - TENSORFLOW_ROS_MODEL_PATH=/root/catkin_ws/src/tensorflow_ros_test/models/train.pb
+  matrix:
+    - ROS_DISTRO="indigo" ROSINSTALL_FILENAME=".travis/rosinstall_ci_old_abi" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six"
+    - ROS_DISTRO="indigo" ROSINSTALL_FILENAME=".travis/rosinstall_ci_old_abi" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.0.0"
+    - ROS_DISTRO="indigo" ROSINSTALL_FILENAME=".travis/rosinstall_ci_old_abi" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.3.0"
+    - ROS_DISTRO="indigo" ROSINSTALL_FILENAME=".travis/rosinstall_ci_old_abi" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.4.0"
+    - ROS_DISTRO="indigo" ROSINSTALL_FILENAME=".travis/rosinstall_ci_old_abi" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.6.0"
+
+    - ROS_DISTRO="kinetic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1"
+    - ROS_DISTRO="kinetic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.0.0"
+    - ROS_DISTRO="kinetic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.3.0"
+    - ROS_DISTRO="kinetic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.4.0"
+    - ROS_DISTRO="kinetic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1" BEFORE_SCRIPT=".travis/upgrade_pip.sh && pip install --ignore-installed six && pip install tensorflow==1.6.0"
+
+    - ROS_DISTRO="melodic" ROSINSTALL_FILENAME=".travis/rosinstall_ci_new_abi" CATKIN_CONFIG="-DFORCE_TF_PIP_SEARCH=1"
+install:
+  - git clone https://github.com/ros-industrial/industrial_ci.git .industrial_ci
+script:
+  - source .industrial_ci/travis.sh

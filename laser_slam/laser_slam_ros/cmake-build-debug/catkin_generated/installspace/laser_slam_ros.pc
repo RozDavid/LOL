@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: laser_slam_ros
+Description: Description of laser_slam_ros
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -llaser_slam_ros
+Requires: cmake_modules doxygen_catkin eigen_catkin glog_catkin gtsam_catkin laser_slam libpointmatcher libpointmatcher_ros message_generation message_runtime minkindr nav_msgs pcl_catkin roscpp tf visualization_msgs

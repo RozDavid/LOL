@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  
+  <node name="tf_publisher" pkg="tf" type="static_transform_publisher" args="0 0.0 0 0 0 0 1 map world 10"/>
+	
+</launch>

@@ -1,0 +1,85 @@
+# Specific Files #
+##################
+segmapper/demonstration_files
+segmatch/python/database
+segmatch/python/classifier/model_cpp
+segmatch/python/classifier/tf_cpp*
+segmatch/python/classifier/ae_baseline*
+segmatch/python/classifier/semantics_nn*
+segmatch/python/classifier/acc_data.p
+segmatch/python/classifier/acc_relative_to_size.pdf
+segmatch/python/classifier/roc.pdf
+segmatch/python/classifier/roc_data.p
+segmatch/python/classifier/reconstructions/
+segmatch/python/classifier/debug/
+segmatch/python/classifier/models/
+segmatch/python/classifier/tensorboard/
+segmatch/python/classifier/reconstructions*
+
+*.ckpt
+*.meta
+*.csv
+
+# Compiled Binaries #
+#####################
+build/
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+.ipynb_checkpoints/
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Point-Cloud Files #
+#####################
+*.pcd
+*.vtk
+
+# Swap Files #
+##############
+*~
+*.bak
+*.swp
+*swp
+*.swo
+
+# Vim Tags #
+############
+tags
+.ycm_extra_conf.py
+.ycm_extra_conf.pyc
+.project_vimrc
+
+# Rosbags and rviz config #
+###########################
+*.rviz
+*.bag
+
+# Matlab data #
+###############
+matlab/data
+segmatch/matlab/figures
+*~
+
+# Python generated files #
+##########################
+*.h5
+*.log
+*.png
+*.pkl
+

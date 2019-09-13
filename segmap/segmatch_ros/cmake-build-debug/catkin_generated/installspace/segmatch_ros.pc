@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: segmatch_ros
+Description: Description of segmatch_ros
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lsegmatch_ros
+Requires: cmake_modules doxygen_catkin eigen_catkin glog_catkin gtsam_catkin laser_slam message_runtime minkindr nav_msgs roscpp segmatch tf visualization_msgs

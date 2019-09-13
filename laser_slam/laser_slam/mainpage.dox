@@ -1,0 +1,16 @@
+/**
+
+\mainpage
+
+TODO(unknown): update mainpage --> package desscription, ...
+
+\b laser_slam is an end-to-end system to laser-based graph SLAM using laser point clouds.
+
+Wiki: https://github.com/ethz-asl/laser_slam
+
+
+This package relies on the following dependencies :
+\verbinclude package.xml
+
+
+*/
