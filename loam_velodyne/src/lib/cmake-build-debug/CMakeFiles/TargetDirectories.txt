@@ -1,3 +1,0 @@
-/home/david/Catkin/loam-segmap/src/loam_velodyne/src/lib/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/david/Catkin/loam-segmap/src/loam_velodyne/src/lib/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/david/Catkin/loam-segmap/src/loam_velodyne/src/lib/cmake-build-debug/CMakeFiles/loam.dir

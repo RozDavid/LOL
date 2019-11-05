@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/david/Catkin/cnn_loam_segmap/devel/lib;/opt/ros/kinetic/lib")

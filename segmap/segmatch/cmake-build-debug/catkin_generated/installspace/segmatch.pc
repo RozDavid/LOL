@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: segmatch
-Description: Description of segmatch
-Version: 0.0.1
-Cflags: -I/usr/local/include
-Libs: -L/usr/local/lib -lsegmatch
-Requires: cmake_modules doxygen_catkin glog_catkin laser_slam minkindr pcl_catkin roscpp tf_graph_executor
