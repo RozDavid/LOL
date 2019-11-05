@@ -27,7 +27,7 @@ SegMapper: {
     publish_full_map: false,
     map_publication_rate_hz: 3,
 
-    path_to_export_trajectory:  "/home/david/Catkin/loam-segmap/records/traj/update_export.txt",
+    path_to_export_trajectory:  "/tmp/loam-segmap/traj/records/update_export.txt",
   },
 
   # SegMatchWorker parameters
@@ -35,7 +35,7 @@ SegMapper: {
     localize: true,
     close_loops: false,
 
-    save_map_full_path: "/home/david/Catkin/loam-segmap/records/",
+    save_map_full_path: "/tmp/loam-segmap/records/",
 
     distance_between_segmentations_m: 0.0,
 

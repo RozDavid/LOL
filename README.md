@@ -24,7 +24,7 @@ maintain  real-time  performance.
 
 
 <div align="center">
-    <img src="https://github.com/RozDavid/LOL/resources/LOL_gif.gif" width = 100% >
+    <img src="https://github.com/RozDavid/LOL/tree/master/resources/Lol_gif.gif" width = 100% >
 </div>
 
 **Advances to the state-of-the-art:**
