@@ -71,9 +71,9 @@ $ catkin build segmapper
 $ catkin build loam_velodyne
 ```
 
-### Rosbag Examples
+###Rosbag Examples
 
-Download the provided resources to your machine from [here](google.com) and save them anywhere in your machine.
+Download the provided map resources to your machine from [here](https://www.dropbox.com/sh/c81dms7qbpp5936/AAAtgIygoivnyq5hcPGDwhtUa?dl=0) and save them anywhere in your machine. The Rosbags for the examples could be downloaded from the original Kitti dataset [website](http://www.cvlibs.net/datasets/kitti/raw_data.php?type=residential), you just need to strip other sensor measurement and */tf* topic from it to run correctly. 
 
 Then modify the folowing *launch* and *yaml* and set the path for downloaded dataset files
 ```sh
@@ -86,8 +86,12 @@ $ ~/Catkin/LOL/segmap/segmapper/launch/kitti/kitti_localization.yaml
 ### Running the Examples
 ##### Run Localization with CNN features
 
+```roslaunch segmapper kitti_loam_segmap.launch```
+
+
 ##### Run Localization with Eigen features
 
+```roslaunch segmapper cnn_loam_segmam.launch```
 
 ### Acknowledgement
 This sourcode and the resulting paper is highy dependent and mostly based on two amazing state-of-the art algorithms. 
