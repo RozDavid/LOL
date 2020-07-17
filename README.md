@@ -1,5 +1,5 @@
 # LOL: Lidar-only  Odometry  and  Localization  in  3D  point  cloud  maps
-### Supplementary material for our ICRA 2020 presented paper 
+### Supplementary material for our ICRA 2020 paper 
 
 
 **Abstract -** In this paper we deal with the problem of odom-
@@ -22,6 +22,8 @@ accuracy  and  the  precision  of  the  vehicle’s  trajectory  were
 significantly  improved  in  every  case,  while  still  being  able  to
 maintain  real-time  performance.
 
+[arXiv](https://arxiv.org/pdf/2007.01595.pdf) | [Video](https://www.youtube.com/watch?v=ektGb5SQGRM&feature=youtu.be)
+
 
 <div align="center">
     <img src="https://github.com/RozDavid/LOL/blob/master/resources/LOL_gif.gif" width = 80% >
@@ -32,6 +34,18 @@ maintain  real-time  performance.
   - We propose a set of enhancements: (i) a RANSAC-based geometrical verification to reduce the number of false 
     matches between the online point cloud and the offline map; and (ii) a fine-grained ICP alignment to refine the relocalization accuracy whenever a good match is detected.
   - Here we publicly release the source code of the proposed system with supplementary prepared datasets to test.
+  
+For any code-related or other questions open an issue [here](https://github.com/RozDavid/LOL/issues). If you found this work helpful for your research, please cite our paper:
+
+```text
+@inproceedings{lol_3dlocalization, 
+	title={{LOL: Lidar-only Odometry and Localization in 3D point cloud maps}}, 
+	author={Rozenberszki, Dávid and Majdik, András}, 
+	booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)}, 
+	year={2020},
+    organization={IEEE} 
+}
+```  
 
 ### Installation
 **Ubuntu 64-bit 16.04. ROS Kinetic. [ROS Installation](http://wiki.ros.org/ROS/Installation)**
