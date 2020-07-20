@@ -108,7 +108,7 @@ $ ~/Catkin/LOL/segmap/segmapper/launch/kitti/kitti_localization.yaml
 ```roslaunch segmapper cnn_loam_segmam.launch```
 
 ### Acknowledgement
-This source code and the resulting paper is highy dependent and mostly based on two amazing state-of-the art algorithms. 
+This source code and the resulting paper is highly dependent and mostly based on two amazing state-of-the art algorithms. 
 The Odometry is calculated by the [LOAM](https://github.com/laboshinl/loam_velodyne), while the segmentation, feature detection and matching is based on the [SegMap](https://github.com/ethz-asl/segmap) algorithm. Without these works this paper wouldn't be able to exist. 
 
 The research reported in this paper was supported by the Hungarian Scientific Research Fund (No. NKFIH OTKA KH-126513) and by the project: Exploring the Mathematical Foundations of Artificial Intelligence 2018-1.2.1-NKP-00008.
