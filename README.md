@@ -98,12 +98,12 @@ $ ~/Catkin/LOL/segmap/segmapper/launch/kitti/kitti_localization.yaml
 ```
 
 ### Running the Examples
-##### Run Localization with CNN features
+##### Run Localization with Eigen features
 
 ```roslaunch segmapper kitti_loam_segmap.launch```
 
 
-##### Run Localization with Eigen features
+##### Run Localization with CNN features
 
 ```roslaunch segmapper cnn_loam_segmam.launch```
 
